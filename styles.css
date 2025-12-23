@@ -103,7 +103,7 @@ body {
 .profile-photo {
   width: 140px;
   height: 140px;
-  border-radius: 50%;
+  border-radius: 8px;
   object-fit: cover;
   object-position: center; 
   border: 3px solid rgba(255, 255, 255, 0.9);
