@@ -1,1 +1,213 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background-color: #f7fafc;
+}
+
+/* Layout helpers */
+.container {
+  width: 90%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(135deg, #1a5f7a, #3b82f6);
+  color: #ffffff;
+  padding: 2.5rem 0 0.5rem;
+}
+
+.header-content {
+  padding-bottom: 1.5rem;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.header-links a {
+  color: #e5f2ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.site-nav {
+  background-color: rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(4px);
+}
+
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+}
+
+.site-nav a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.site-nav a:hover {
+  background-color: rgba(15, 23, 42, 0.25);
+}
+
+/* Sections */
+.section {
+  padding: 2.5rem 0;
+  background-color: #f7fafc;
+}
+
+.section-alt {
+  background-color: #ffffff;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  margin-bottom: 0.75rem;
+}
+
+/* Grid for research cards */
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Publications */
+.pub-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.pub-list li {
+  margin-bottom: 1rem;
+  padding-left: 0.4rem;
+  border-left: 3px solid #d1d5db;
+}
+
+.pub-title {
+  font-weight: 600;
+}
+
+.pub-authors,
+.pub-venue {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.section-note {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.35rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code element */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85rem;
+  background-color: #e5e7eb;
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+}
+
+/* Responsive */
+@media (min-width: 720px) {
+  .site-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 
