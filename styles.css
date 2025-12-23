@@ -82,6 +82,46 @@ body {
   background-color: rgba(15, 23, 42, 0.25);
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header-left {
+  flex: 2;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.25);
+}
+
+/* Stack on small screens */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    justify-content: flex-start;
+  }
+}
+
+
 /* Sections */
 .section {
   padding: 2.5rem 0;
